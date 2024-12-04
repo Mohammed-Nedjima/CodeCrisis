@@ -17,6 +17,10 @@
       href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&family=Overpass:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,700;1,900&family=Ubuntu&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <script
       src="https://kit.fontawesome.com/536af953bc.js"
       crossorigin="anonymous"
@@ -117,32 +121,135 @@
           </div>
         </div>
         <h2 class="text-primary text-5xl font-bold mb-16">Our Agenda</h2>
-        <ul class="grid gap-8">
-          <li class="flex gap-8 justify-center">
-            <p class="text-3xl font-bold">8:00 - 9:00</p>
-            <p class="text-lg">Lorem ipsum dolor sit amet, consectetur</p>
-          </li>
-          <li class="flex gap-8 justify-center">
-            <p class="text-3xl font-bold">8:00 - 9:00</p>
-            <p class="text-lg">Lorem ipsum dolor sit amet, consectetur</p>
-          </li>
-          <li class="flex gap-8 justify-center">
-            <p class="text-3xl font-bold">8:00 - 9:00</p>
-            <p class="text-lg">Lorem ipsum dolor sit amet, consectetur</p>
-          </li>
-          <li class="flex gap-8 justify-center">
-            <p class="text-3xl font-bold">8:00 - 9:00</p>
-            <p class="text-lg">Lorem ipsum dolor sit amet, consectetur</p>
-          </li>
-          <li class="flex gap-8 justify-center">
-            <p class="text-3xl font-bold">8:00 - 9:00</p>
-            <p class="text-lg">Lorem ipsum dolor sit amet, consectetur</p>
-          </li>
-          <li class="flex gap-8 justify-center">
-            <p class="text-3xl font-bold">8:00 - 9:00</p>
-            <p class="text-lg">Lorem ipsum dolor sit amet, consectetur</p>
-          </li>
-        </ul>
+        <div class="swiper">
+          <div class="slider-wrapper">
+            <div class="swiper-wrapper">
+              <div class="day1 swiper-slide cursor-grab select-none">
+                <h4 class="text-4xl font-bold mb-8">1st Day</h4>
+                <div class="flex justify-center gap-8 md:gap-16">
+                  <ul class="grid gap-8">
+                    <li class="flex gap-12 justify-between">
+                      <p class="text-3xl font-bold">08:30 - 09:30</p>
+                    </li>
+                    <li>
+                      <p class="text-3xl font-bold">09:30 - 10:00</p>
+                    </li>
+                    <li>
+                      <p class="text-3xl font-bold">10:00 - 10:30</p>
+                    </li>
+                    <li>
+                      <p class="text-3xl font-bold">10:30 - 13:00</p>
+                    </li>
+                    <li>
+                      <p class="text-3xl font-bold">13:00 - 14:00</p>
+                    </li>
+                    <li>
+                      <p class="text-3xl font-bold">14:00 - 17:00</p>
+                    </li>
+                    <li>
+                      <p class="text-3xl font-bold">17:30 - 21:30</p>
+                    </li>
+                    <li>
+                      <p class="text-3xl font-bold">21:30</p>
+                    </li>
+                  </ul>
+                  <ul class="grid gap-8">
+                    <li>
+                      <p class="text-lg text-left">Welcome and registration</p>
+                    </li>
+                    <li>
+                      <p class="text-lg text-left">
+                        Opening ceremony and event presentation
+                      </p>
+                    </li>
+                    <li>
+                      <p class="text-lg text-left">
+                        Team training and briefing
+                      </p>
+                    </li>
+                    <li>
+                      <p class="text-lg text-left">
+                        Working on the first challenges
+                      </p>
+                    </li>
+                    <li>
+                      <p class="text-lg text-left">Lunch break</p>
+                    </li>
+                    <li>
+                      <p class="text-lg text-left">
+                        Continue working on the first challenges
+                      </p>
+                    </li>
+                    <li>
+                      <p class="text-lg text-left">
+                        Working on the second challenge
+                      </p>
+                    </li>
+                    <li>
+                      <p class="text-lg text-left">
+                        Delivery and end of the first day
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="day2 swiper-slide cursor-grab select-none w-[700px]">
+                <h4 class="text-4xl font-bold mb-8">2nd Day</h4>
+                <div class="flex justify-center gap-8 md:gap-16">
+                  <ul class="grid gap-8">
+                    <li class="flex gap-12 justify-between">
+                      <p class="text-3xl font-bold">09:00 - 13:00</p>
+                    </li>
+                    <li>
+                      <p class="text-3xl font-bold">13:00 - 14:00</p>
+                    </li>
+                    <li>
+                      <p class="text-3xl font-bold">14:00 - 15:00</p>
+                    </li>
+                    <li>
+                      <p class="text-3xl font-bold">15:00 - 15:30</p>
+                    </li>
+                    <li>
+                      <p class="text-3xl font-bold">15:30 - 16:30</p>
+                    </li>
+                  </ul>
+                  <ul class="grid gap-8">
+                    <li>
+                      <p class="text-lg text-left">
+                        Working on the final challenge
+                      </p>
+                    </li>
+                    <li>
+                      <p class="text-lg text-left">
+                        Lunch break and delivery of the third challenge
+                      </p>
+                    </li>
+                    <li>
+                      <p class="text-lg text-left">
+                        Final presentations and evaluation by the jury
+                      </p>
+                    </li>
+                    <li>
+                      <p class="text-lg text-left">Deliberation of the jury</p>
+                    </li>
+                    <li>
+                      <p class="text-lg text-left">
+                        Announcement of the winning team and closing ceremony
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="swiper-button-prev text-primary duration-300 invisible md:visible ml-0 md:ml-8 lg:ml-16"
+          ></div>
+          <div
+            class="swiper-button-next text-primary duration-300 invisible md:visible mr-0 md:mr-8 lg:mr-16"
+          ></div>
+        </div>
       </div>
     </section>
     <!-- End Where -->
@@ -453,6 +560,7 @@
       </div>
     </footer>
     <!-- End footer -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
       function Menu(e) {
         let nav = document.getElementById("links");
@@ -493,6 +601,24 @@
           icon.innerHTML = minusSVG;
         }
       }
+
+      const swiper = new Swiper(".slider-wrapper", {
+        loop: false,
+
+        // If we need pagination
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+          dynamicBullets: true,
+        },
+
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </body>
 </html>

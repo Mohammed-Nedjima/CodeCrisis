@@ -588,6 +588,10 @@ video {
   }
 }
 
+.invisible {
+  visibility: hidden;
+}
+
 .absolute {
   position: absolute;
 }
@@ -646,6 +650,14 @@ video {
   margin-bottom: 2rem;
 }
 
+.ml-8 {
+  margin-left: 2rem;
+}
+
+.mr-8 {
+  margin-right: 2rem;
+}
+
 .mt-16 {
   margin-top: 4rem;
 }
@@ -656,6 +668,14 @@ video {
 
 .mt-8 {
   margin-top: 2rem;
+}
+
+.ml-0 {
+  margin-left: 0px;
+}
+
+.mr-0 {
+  margin-right: 0px;
 }
 
 .block {
@@ -714,6 +734,10 @@ video {
   width: 600px;
 }
 
+.w-\[700px\] {
+  width: 700px;
+}
+
 .w-full {
   width: 100%;
 }
@@ -730,8 +754,18 @@ video {
   flex-grow: 1;
 }
 
+.cursor-grab {
+  cursor: grab;
+}
+
 .cursor-pointer {
   cursor: pointer;
+}
+
+.select-none {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 
 .flex-col {
@@ -888,6 +922,10 @@ video {
 
 .pb-5 {
   padding-bottom: 1.25rem;
+}
+
+.text-left {
+  text-align: left;
 }
 
 .text-center {
@@ -1075,8 +1113,9 @@ h6 {
   isolation: isolate;
 }
 
-.hero {
-  background-image: url("assets/hero.webp");
+.swiper-button-next,
+.swiper-button-prev {
+  color: #ff6500 !important;
 }
 
 .after\:absolute::after {
@@ -1136,12 +1175,32 @@ h6 {
 }
 
 @media (min-width: 768px) {
+  .md\:visible {
+    visibility: visible;
+  }
+
   .md\:static {
     position: static;
   }
 
   .md\:z-auto {
     z-index: auto;
+  }
+
+  .md\:ml-16 {
+    margin-left: 4rem;
+  }
+
+  .md\:mr-16 {
+    margin-right: 4rem;
+  }
+
+  .md\:ml-8 {
+    margin-left: 2rem;
+  }
+
+  .md\:mr-8 {
+    margin-right: 2rem;
   }
 
   .md\:flex {
@@ -1166,6 +1225,10 @@ h6 {
 
   .md\:justify-center {
     justify-content: center;
+  }
+
+  .md\:gap-16 {
+    gap: 4rem;
   }
 
   .md\:gap-20 {
@@ -1235,6 +1298,14 @@ h6 {
 }
 
 @media (min-width: 1024px) {
+  .lg\:ml-16 {
+    margin-left: 4rem;
+  }
+
+  .lg\:mr-16 {
+    margin-right: 4rem;
+  }
+
   .lg\:flex-row {
     flex-direction: row;
   }
