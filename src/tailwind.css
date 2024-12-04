@@ -833,6 +833,10 @@ video {
   background-image: url('/assets/hero.jpg');
 }
 
+.bg-\[url\(\'\/assets\/hero\.webp\'\)\] {
+  background-image: url('/assets/hero.webp');
+}
+
 .bg-cover {
   background-size: cover;
 }
