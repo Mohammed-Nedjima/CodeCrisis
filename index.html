@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Code Crisis</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/tailwind.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,700;1,900&family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&family=Overpass:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,700;1,900&family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/536af953bc.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="icon" href="assets/Logo2.svg" />
+    <script defer src="src/index.js"></script>
+  </head>
+  <body class="bg-snow-white text-darker-blue">
+    <!-- Start headder -->
+    <header
+      class="container mx-auto p-6 flex justify-between items-center z-10"
+    >
+      <div>
+        <img class="w-12" src="assets/Logo2.svg" alt="" />
+      </div>
+      <nav class="md:flex md:items-center md:justify-center">
+        <span class="text-3xl text-primary cursor-pointer md:hidden block"
+          ><i class="fa-solid fa-bars" onclick="Menu(this)"></i
+        ></span>
+        <div
+          id="links"
+          class="md:flex md:items-center md:z-auto md:static absolute w-full left-0 md:w-auto hidden md:bg-transparent bg-black opacity-85 md:opacity-100 top-[85px] text-snow-white md:text-darker-blue z-10"
+        >
+          <a
+            class="font-semibold text-xl block mx-6 py-4 px-4 md:px-0 md:py-0 hover:text-primary duration-100 md:border-none border-b-2 border-gray-200"
+            href="#home"
+            >Home</a
+          >
+
+          <a
+            class="font-semibold text-xl block mx-6 py-4 px-4 md:px-0 md:py-0 hover:text-primary duration-100 md:border-none border-b-2 border-gray-200"
+            href="#where"
+            >Where</a
+          >
+          <a
+            class="font-semibold text-xl block mx-6 py-4 px-4 md:px-0 md:py-0 hover:text-primary duration-100 md:border-none border-b-2 border-gray-200"
+            href="#about"
+            >About</a
+          >
+
+          <a
+            class="font-semibold text-xl block mx-6 py-4 px-4 md:px-0 md:py-0 hover:text-primary duration-100 md:border-none border-b-2 border-gray-200"
+            href="#faq"
+            >FAQ</a
+          >
+
+          <a
+            class="font-semibold text-xl block mx-6 py-4 px-4 md:px-0 md:py-0 hover:text-primary duration-100"
+            href="#contact"
+            >Contact</a
+          >
+        </div>
+      </nav>
+    </header>
+    <!-- End headder -->
+    <!-- Start hero -->
+    <section
+      id="home"
+      class="min-h-[calc(100vh-76px)] bg-[url('/assets/hero.jpg')] bg-cover relative after:absolute after:left-0 after:top-0 after:w-full after:h-full after:bg-black after:opacity-50"
+    >
+      <div
+        class="container mx-auto px-4 flex items-center justify-center min-h-[calc(100vh-76px)]"
+      >
+        <div class="text-center relative z-[5]">
+          <h1
+            class="font-[kanit] text-7xl md:text-8xl font-bold text-primary mb-8"
+          >
+            CodeCrisis
+          </h1>
+          <p class="max-w-[700px] text-lg md:text-2xl text-snow-white">
+            Code Crisis is a two-day immersive tech challenge on December 20-21
+            at ESI. The participants will face "Sentinel," a malicious AI, by
+            solving technical problems in cybersecurity, programming, and logic.
+          </p>
+          <a href="#">
+            <button
+              class="block py-4 px-10 rounded-lg bg-dark-blue text-snow-white font-bold text-xl mt-8 hover:bg-primary duration-100 mx-auto"
+            >
+              Join us
+            </button>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- End hero -->
+    <!-- Start Where -->
+    <section id="where" class="py-section-padding">
+      <div class="container mx-auto text-center">
+        <h2 class="text-6xl font-bold mb-16">Where & how?</h2>
+        <div class="flex justify-center flex-col xl:flex-row gap-36 mb-28">
+          <div>
+            <i class="fa-solid fa-location-dot text-7xl text-primary"></i>
+            <h3 class="text-5xl font-bold mt-8">ESI Algires</h3>
+          </div>
+          <div>
+            <i class="fa-solid fa-calendar-days text-7xl text-primary"></i>
+            <h3 class="text-5xl font-bold mt-8">Dec 20-21</h3>
+          </div>
+        </div>
+        <h2 class="text-primary text-5xl font-bold mb-16">Our Agenda</h2>
+        <ul class="grid gap-8">
+          <li class="flex gap-8 justify-center">
+            <p class="text-3xl font-bold">8:00 - 9:00</p>
+            <p class="text-lg">Lorem ipsum dolor sit amet, consectetur</p>
+          </li>
+          <li class="flex gap-8 justify-center">
+            <p class="text-3xl font-bold">8:00 - 9:00</p>
+            <p class="text-lg">Lorem ipsum dolor sit amet, consectetur</p>
+          </li>
+          <li class="flex gap-8 justify-center">
+            <p class="text-3xl font-bold">8:00 - 9:00</p>
+            <p class="text-lg">Lorem ipsum dolor sit amet, consectetur</p>
+          </li>
+          <li class="flex gap-8 justify-center">
+            <p class="text-3xl font-bold">8:00 - 9:00</p>
+            <p class="text-lg">Lorem ipsum dolor sit amet, consectetur</p>
+          </li>
+          <li class="flex gap-8 justify-center">
+            <p class="text-3xl font-bold">8:00 - 9:00</p>
+            <p class="text-lg">Lorem ipsum dolor sit amet, consectetur</p>
+          </li>
+          <li class="flex gap-8 justify-center">
+            <p class="text-3xl font-bold">8:00 - 9:00</p>
+            <p class="text-lg">Lorem ipsum dolor sit amet, consectetur</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- End Where -->
+    <!-- Start About -->
+    <section id="about" class="bg-dark-blue py-section-padding">
+      <div class="container mx-auto text-center px-8">
+        <h2 class="text-6xl font-bold mb-12 text-snow-white">
+          About The event
+        </h2>
+        <p class="text-xl text-snow-white">
+          Code Crisis is an exciting and immersive two-day event designed to
+          challenge the brightest minds at the École supérieure d'informatique
+          (ESI). Our mission is to foster teamwork, creativity, and technical
+          skills in the fields of cybersecurity, programming, and logic.
+          Participants will face off against "Sentinel," a malicious AI, and
+          work together to solve a series of technical challenges to protect a
+          fictional organization. Whether you're a seasoned coder or just
+          passionate about technology, Code Crisis offers a unique opportunity
+          to test and grow your skills in a dynamic and engaging environment.
+          Join us as we push the boundaries of problem-solving, innovation, and
+          collaboration!
+        </p>
+        <div
+          class="flex flex-col gap-8 md:flex-row md:gap-20 justify-center mt-16"
+        >
+          <div class="bg-snow-white rounded-2xl p-8 md:p12">
+            <i
+              class="fa-solid fa-code text-3xl md:text-4xl text-darker-blue mb-4"
+            ></i>
+            <p class="text-3xl md:text-4xl">Coding</p>
+          </div>
+          <div class="bg-snow-white rounded-2xl p-8 md:p12">
+            <i
+              class="fa-solid fa-users text-3xl md:text-4xl text-darker-blue mb-4"
+            ></i>
+            <p class="text-3xl md:text-4xl">Teamwork</p>
+          </div>
+          <div class="bg-snow-white rounded-2xl p-8 md:p12">
+            <i
+              class="fa-solid fa-lightbulb text-3xl md:text-4xl text-darker-blue mb-4"
+            ></i>
+            <p class="text-3xl md:text-4xl">Projects</p>
+          </div>
+        </div>
+        <h2 class="text-6xl font-bold mt-20 mb-12 text-snow-white">
+          Who are we!
+        </h2>
+        <p class="text-xl text-snow-white">
+          CSE (Scientific Club of ESI) is a student club at the Higher National
+          School of Computer Science in Algiers. It's made for students who are
+          passionate about computers, high tech, robotics, design, and anything
+          related to technology . The CSE has managed to gain its place
+          nationally and internationally by organizing major Tech events. After
+          organizing the first hackathon and one of the largest in Algeria, the
+          club is considered as one of the biggest and most active clubs in the
+          country.
+        </p>
+        <div>
+          <img
+            class="w-96 mx-auto mt-20"
+            src="assets/image.png"
+            alt="CSE Logo"
+          />
+        </div>
+        <div class="mt-8 flex flex-col lg:flex-row justify-center gap-12">
+          <div
+            class="max-w-[600px] max-h-[300px] overflow-hidden rounded-xl border-4 border-snow-white"
+          >
+            <img
+              class="w-[600px] max-h-[300px] aspect-video"
+              src="./assets/img1.JPG"
+              alt=""
+            />
+          </div>
+          <div
+            class="max-w-[600px] max-h-[300px] overflow-hidden rounded-xl border-4 border-snow-white"
+          >
+            <img
+              class="w-[600px] max-h-[300px] aspect-video"
+              src="./assets/img2.JPG"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End About -->
+    <!-- Start FAQ -->
+    <section
+      id="faq"
+      class="md:py-section-padding px-0 md:px-16 flex justify-center items-center"
+    >
+      <div
+        class="bg-darker-blue text-snow-white py-16 md:py-8 p-8 md:rounded-3xl text-xl font-semibold"
+      >
+        <h2 class="text-6xl font-bold mb-12 text-snow-white text-center">
+          Got Questions?
+        </h2>
+        <div>
+          <!-- Accordion Item 1 -->
+          <div class="border-b border-slate-200">
+            <button
+              onclick="toggleAccordion(1)"
+              class="w-full flex justify-between items-center py-5 text-snow-white hover:text-primary duration-300"
+            >
+              <span>Who can participate in this event?</span>
+              <span id="icon-1" class="transition-transform duration-300">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 16 16"
+                  fill="currentColor"
+                  class="w-4 h-4"
+                >
+                  <path
+                    d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z"
+                  />
+                </svg>
+              </span>
+            </button>
+            <div
+              id="content-1"
+              class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
+            >
+              <div class="pb-5 text-lg font-normal text-snow-white">
+                All students of ESI are warmly invited to join Code Crisis and
+                showcase their skills!🚀
+              </div>
+            </div>
+          </div>
+
+          <!-- Accordion Item 2 -->
+          <div class="border-b border-slate-200">
+            <button
+              onclick="toggleAccordion(2)"
+              class="w-full flex justify-between items-center py-5 text-snow-white hover:text-primary duration-300"
+            >
+              <span>How can we register to participate in this event ?</span>
+              <span id="icon-2" class="transition-transform duration-300">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 16 16"
+                  fill="currentColor"
+                  class="w-4 h-4"
+                >
+                  <path
+                    d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z"
+                  />
+                </svg>
+              </span>
+            </button>
+            <div
+              id="content-2"
+              class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
+            >
+              <div class="pb-5 text-lg font-normal text-snow-white">
+                To register for Code Crisis , simply click the 'Join us' button
+                located at the top of the website and fill out the form with
+                your details. Spots are limited, so make sure to sign up early!
+              </div>
+            </div>
+          </div>
+
+          <!-- Accordion Item 3 -->
+          <div class="border-b border-slate-200">
+            <button
+              onclick="toggleAccordion(3)"
+              class="w-full flex justify-between items-center py-5 text-snow-white hover:text-primary duration-300"
+            >
+              <span>Can I participate individually or do I need a team ?</span>
+              <span id="icon-3" class="transition-transform duration-300">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 16 16"
+                  fill="currentColor"
+                  class="w-4 h-4"
+                >
+                  <path
+                    d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z"
+                  />
+                </svg>
+              </span>
+            </button>
+            <div
+              id="content-3"
+              class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
+            >
+              <div class="pb-5 text-lg font-normal text-snow-white">
+                Participation in Code Crisis is team-based to encourage
+                collaboration and creative problem-solving. Each team can have
+                3-5 members. If you don’t have a team yet, don’t worry we can
+                help you find one during registration! Together, you’ll face the
+                challenges and outsmart "Sentinel" as a united force.💡
+              </div>
+            </div>
+          </div>
+          <div class="border-b border-slate-200">
+            <button
+              onclick="toggleAccordion(4)"
+              class="w-full flex justify-between items-center py-5 text-snow-white hover:text-primary duration-300"
+            >
+              <span
+                >Do participants need prior experience in these fields to take
+                part?</span
+              >
+              <span id="icon-4" class="transition-transform duration-300">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 16 16"
+                  fill="currentColor"
+                  class="w-4 h-4"
+                >
+                  <path
+                    d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z"
+                  />
+                </svg>
+              </span>
+            </button>
+            <div
+              id="content-4"
+              class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
+            >
+              <div class="pb-5 text-lg font-normal text-snow-white">
+                Yes, some knowledge in fields such as cybersecurity and
+                programming is necessary to participate. However, the event is
+                designed to challenge and enhance your skills, so all levels of
+                experience are welcome!
+              </div>
+            </div>
+          </div>
+          <div class="">
+            <button
+              onclick="toggleAccordion(5)"
+              class="w-full flex justify-between items-center py-5 text-snow-white hover:text-primary duration-300"
+            >
+              <span>How will the winning team be determined?</span>
+              <span id="icon-5" class="transition-transform duration-300">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 16 16"
+                  fill="currentColor"
+                  class="w-4 h-4"
+                >
+                  <path
+                    d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z"
+                  />
+                </svg>
+              </span>
+            </button>
+            <div
+              id="content-5"
+              class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
+            >
+              <div class="pb-5 text-lg font-normal text-snow-white">
+                The winning team will be determined by the jury, based on which
+                team is able to defeat Sentinel first and in the most efficient
+                way possible.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End FAQ -->
+    <!-- Start footer -->
+    <footer id="contact" class="bg-dark-blue py-8 px-8">
+      <div
+        class="container mx-auto flex flex-col md:flex-row text-center gap-8 justify-between items-center text-snow-white text-xl"
+      >
+        <div>
+          <h3 class="font-bold text-3xl mb-4">CodeCrisis</h3>
+          <p>
+            Code Crisis is a two-day tech challenge on <br />cybersecurity,
+            programming, and logic by <br />the Scientific Club of ESI.
+          </p>
+        </div>
+        <div>
+          <img class="w-40" src="assets/image.png" alt="" />
+        </div>
+        <div class="text-center">
+          <h3 class="font-bold text-3xl mb-4">Contact Us</h3>
+          <a
+            class="hover:text-primary active:underline duration-150 mb-2 block"
+            href="mailto:cse@esi.dz"
+            >cse@esi.dz</a
+          >
+          <div class="flex gap-2 mb-4">
+            <i class="fa-solid fa-phone"></i>
+            <span>+213 23 23 23 23</span>
+          </div>
+          <div class="flex justify-between">
+            <a href="https://web.facebook.com/club.scientifique.esi">
+              <i
+                class="fa-brands fa-facebook hover:text-primary hover:scale-110 text-4xl duration-150"
+              ></i>
+            </a>
+            <a href="https://x.com/CSESI_Club">
+              <i
+                class="fa-brands fa-twitter hover:text-primary hover:scale-110 text-4xl duration-150"
+              ></i>
+            </a>
+            <a href="https://www.instagram.com/cse.club/">
+              <i
+                class="fa-brands fa-instagram hover:text-primary hover:scale-110 text-4xl duration-150"
+              ></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End footer -->
+    <script>
+      function Menu(e) {
+        let nav = document.getElementById("links");
+        if (e.classList.contains("fa-bars")) {
+          e.classList.remove("fa-bars");
+          e.classList.add("fa-xmark");
+          nav.classList.toggle("hidden");
+        } else {
+          e.classList.remove("fa-xmark");
+          e.classList.add("fa-bars");
+          nav.classList.toggle("hidden");
+        }
+      }
+      function toggleAccordion(index) {
+        const content = document.getElementById(`content-${index}`);
+        const icon = document.getElementById(`icon-${index}`);
+
+        // SVG for Minus icon
+        const minusSVG = `
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4">
+        <path d="M3.75 7.25a.75.75 0 0 0 0 1.5h8.5a.75.75 0 0 0 0-1.5h-8.5Z" />
+      </svg>
+    `;
+
+        // SVG for Plus icon
+        const plusSVG = `
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4">
+        <path d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
+      </svg>
+    `;
+
+        // Toggle the content's max-height for smooth opening and closing
+        if (content.style.maxHeight && content.style.maxHeight !== "0px") {
+          content.style.maxHeight = "0";
+          icon.innerHTML = plusSVG;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+          icon.innerHTML = minusSVG;
+        }
+      }
+    </script>
+  </body>
+</html>
