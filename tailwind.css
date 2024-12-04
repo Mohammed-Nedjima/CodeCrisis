@@ -1075,6 +1075,10 @@ h6 {
   isolation: isolate;
 }
 
+.hero {
+  background-image: url("assets/hero.webp");
+}
+
 .after\:absolute::after {
   content: var(--tw-content);
   position: absolute;
